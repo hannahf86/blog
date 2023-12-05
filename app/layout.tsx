@@ -1,5 +1,8 @@
 import './globals.css'
 
+// components
+import Navbar from './(shared)/Navbar';
+
 // fonts
 import { Open_Sans} from 'next/font/google';
 
@@ -23,6 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={openSans.className} lang="en">
+      <Navbar />
       <body>{children}</body>
     </html>
   )
