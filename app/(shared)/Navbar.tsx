@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-// import SocialLinks from "./SocialLinks";
+import SocialLinks from "./SocialLinks";
 import Ad1 from "/public/assets/ad-1.jpg";
 
 type Props = {};
@@ -12,7 +12,7 @@ const Navbar = (props: Props) => {
       <nav className="flex justify-between items-center w-full bg-wh-900 text-wh-10 px-10 py-4">
         
         <div className="hidden sm:block">
-          {/* <SocialLinks /> */}
+          <SocialLinks />
         </div>
 
         <div className="flex justify-between items-center gap-10">
@@ -50,7 +50,7 @@ const Navbar = (props: Props) => {
         </div>
 
       </div>
-      
+
       <hr className="border-1 mx-10" />
     </header>
   );

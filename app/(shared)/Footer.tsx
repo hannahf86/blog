@@ -1,7 +1,8 @@
 import React from "react";
 
 const Footer = () => {
-  return (
+  
+    return (
     <footer className="bg-wh-900 text-wh-50 py-10 px-10">
       <div className="justify-between mx-auto gap-16 sm:flex">
 
@@ -30,7 +31,7 @@ const Footer = () => {
           <p className="my-5">Tempus metus mattis risus volutpat egestas.</p>
           <p>(333)425-6825</p>
         </div>
-        
+
       </div>
     </footer>
   );
