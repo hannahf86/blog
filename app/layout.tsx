@@ -1,33 +1,29 @@
-import './globals.css'
-
-// components
-import Navbar from './(shared)/Navbar';
-
-// fonts
-import { Open_Sans} from 'next/font/google';
+import "./globals.css";
+import { Open_Sans } from "next/font/google";
+import Navbar from "app/(shared)/Navbar";
+import Footer from "app/(shared)/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-})
+});
 
-
-// meta data
 export const metadata = {
-  title: 'Blog Site',
-  description: 'Blog built in Next.js using AI',
-}
+  title: "Blog AI App",
+  description: "Blog built in Next JS that uses AI",
+};
 
-
-// app
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html className={openSans.className} lang="en">
-      <Navbar />
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }

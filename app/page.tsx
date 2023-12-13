@@ -4,8 +4,8 @@ import Travel from "@/app/(home)/Travel";
 import Other from "@/app/(shared)/Other";
 import Subscribe from "@/app/(shared)/Subscribe";
 import Sidebar from "@/app/(shared)/Sidebar";
-import { prisma } from "@/app/api/hello";
-import { Post } from "@/prisma/client";
+import { prisma } from "@/app/api/client";
+import { Post } from "@prisma/client";
 
 export const revalidate = 60;
 
